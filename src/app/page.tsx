@@ -21,7 +21,7 @@ export default function Home() {
             <section>
               <h2 className="uppercase text-sm font-semibold mb-2">today</h2>
               <p>
-                senior at <a href="http://nis.edu.kz" target="_blank" className="underline">nazarbayev school</a>. <br />
+                senior at <a href="https://nis.edu.kz" target="_blank" className="underline">nazarbayev school</a>. <br />
               </p>
             </section>
 
