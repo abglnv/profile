@@ -1,14 +1,8 @@
 'use client'
 
 import Image from "next/image"
-import { act, useState } from "react"
-import Projects from "@/components/Projects"
-import Blog from "@/components/Blog"
-import Experience from "@/components/Experience"
 
 export default function Home() {
-  const [activeTab, setActiveTab] = useState<"about" | "experience" | "projects" | "blog">("about")
-
   return (
     <main className="min-h-screen bg-neutral-50 text-neutral-900 font-mono flex flex-col items-center p-8">
       <div className="flex flex-col items-center text-center space-y-2 max-w-xl">
@@ -24,8 +18,6 @@ export default function Home() {
       </div>
 
       <div className="mt-10 max-w-2xl space-y-8">
-        {activeTab === "about" && (
-          <>
             <section>
               <h2 className="uppercase text-sm font-semibold mb-2">today</h2>
               <p>
@@ -41,7 +33,7 @@ export default function Home() {
             <section>
               <h2 className="uppercase text-sm font-semibold mb-2">favourite quote</h2>
               <blockquote className="italic">
-                "what the hell is work-life-balance, you should have work-work-balance."
+                {"what the hell is work-life-balance, you should have work-work-balance."}
               </blockquote>
             </section>
 
@@ -53,20 +45,6 @@ export default function Home() {
                 <li><a href="mailto:me@baglanov.com" target="_blank" className="underline">email</a></li>
               </ul>
             </section>
-          </>
-        )}
-
-        {activeTab === "projects" && (
-          <Projects />
-        )}
-
-        {activeTab === "blog" && (
-          <Blog />
-        )}
-
-        {activeTab === "experience" && (
-          <Experience />
-        )}
       </div>
     </main>
   )

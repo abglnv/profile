@@ -3,16 +3,6 @@ import Link from "next/link"
 import { supabase } from "@/lib/supabase"
 import { Button } from "@/components/ui/button"
 
-interface BlogPost {
-  id: number
-  created_at: string
-  slug: string
-  title: string
-  content: string
-  description: string
-  views: number
-}
-
 export default async function Blog() {
   const { data: blogs, error } = await supabase.from("posts").select("*")
 

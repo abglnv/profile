@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import Link from "next/link";
 
 export default function NotFound() {
   return (
@@ -12,26 +12,26 @@ export default function NotFound() {
         </p>
 
         <p className="mt-4">
-          Maybe go back <a href="/" className="underline">home</a> and try again.
+          Maybe go back <Link href="/" className="underline">home</Link> and try again.
         </p>
 
         <div className="mt-6 space-y-1 text-sm">
           <p>Or contact me directly 😉:</p>
           <ul className="space-y-1">
             <li>
-              <a href="https://t.me/abglnv" target="_blank" className="underline">
+              <Link href="https://t.me/abglnv" target="_blank" className="underline">
                 Telegram
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="mailto:me@baglanov.com" target="_blank" className="underline">
+              <Link href="mailto:me@baglanov.com" target="_blank" className="underline">
                 Email
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="https://www.linkedin.com/in/baglanov/" target="_blank" className="underline">
+              <Link href="https://www.linkedin.com/in/baglanov/" target="_blank" className="underline">
                 LinkedIn
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
