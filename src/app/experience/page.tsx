@@ -30,14 +30,14 @@ export const experienceList: ExperienceItem[] = [
 
 export default function Experience() {
   return (
-    <div className="flex flex-col space-y-6 mx-auto max-w-2xl w-2xl">
+    <div className="flex flex-col space-y-6 mx-auto w-full max-w-2xl px-4 sm:px-0">
       {experienceList.map((exp, i) => (
-        <div key={i} className="border-b border-neutral-200 pb-4">
-          <h2 className="text-lg font-semibold">{exp.role}</h2>
-          <p className="text-sm text-neutral-600">
+        <div key={i} className="border-b border-neutral-200 pb-6">
+          <h2 className="text-lg sm:text-lg font-semibold">{exp.role}</h2>
+          <p className="text-sm sm:text-sm text-neutral-600 mt-1">
             {exp.company} • {exp.period}
           </p>
-          <ul className="list-disc list-inside mt-2 space-y-1 text-sm text-neutral-500">
+          <ul className="list-disc list-inside mt-2 space-y-1 text-sm sm:text-sm text-neutral-500">
             {exp.description.map((line, j) => (
               <li key={j}>{line}</li>
             ))}
@@ -45,5 +45,5 @@ export default function Experience() {
         </div>
       ))}
     </div>
-  )
+  );
 }
