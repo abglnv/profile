@@ -33,7 +33,7 @@ export default function Home() {
             <section>
               <h2 className="uppercase text-sm font-semibold mb-2">favourite quote</h2>
               <blockquote className="italic">
-                {"what the hell is work-life-balance, you should have work-work-balance."}
+                {'"what the hell is work-life-balance, you should have work-work-balance."'}
               </blockquote>
             </section>
 
