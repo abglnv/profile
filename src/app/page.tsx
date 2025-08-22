@@ -41,6 +41,7 @@ export default function Home() {
               <h2 className="uppercase text-sm font-semibold mb-2">links</h2>
               <ul className="space-y-1">
                 <li><a href="https://github.com/abglnv" target="_blank" className="underline">github</a></li>
+                <li><a href="https://t.me/abglnv" target="_blank" className="underline">telegram</a></li>
                 <li><a href="https://www.linkedin.com/in/baglanov/" target="_blank" className="underline">linkedin</a></li>
                 <li><a href="mailto:me@baglanov.com" target="_blank" className="underline">email</a></li>
               </ul>
